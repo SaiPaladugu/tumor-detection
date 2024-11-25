@@ -37,4 +37,4 @@ if __name__ == "__main__":
         raise FileNotFoundError(f"data.yaml not found at {YAML_PATH}")
 
     # Train YOLOv8
-    train_yolo(data_yaml=YAML_PATH, model_type='yolov8n', epochs=50, img_size=640)
+    train_yolo(data_yaml=YAML_PATH, model_type='yolov8n', epochs=3, img_size=640)
