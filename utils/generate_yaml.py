@@ -30,7 +30,10 @@ def create_yaml(data_dir, yaml_path):
 
     # Extract class names (assume consecutive class IDs starting from 0)
     class_ids = extract_class_names(train_labels_dir)
-    class_names = [f"class_{id}" for id in class_ids]  # Replace with actual names if available
+    
+    # Map class IDs to names
+    id_to_name = {0: 'negative', 1: 'positive'}  # Map class IDs to desired names
+    class_names = [id_to_name[id] for id in class_ids]
 
     # Create YAML content
     data_yaml = {

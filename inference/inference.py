@@ -4,7 +4,7 @@ import os
 # Define paths
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 MODEL_PATH = os.path.join(BASE_DIR, 'runs', 'detect', 'train', 'weights', 'best.pt')  # Path to trained YOLO model
-INFERENCE_SOURCE = os.path.join(BASE_DIR, 'data', 'brain_tumor', 'test', 'images')  # Path to input images or videos
+INFERENCE_SOURCE = os.path.join(BASE_DIR, 'data', 'brain_tumor', 'valid', 'images')  # Path to input images or videos
 OUTPUT_DIR = os.path.join(BASE_DIR, 'runs', 'inference')  # Output directory for results
 
 # Function to run inference
@@ -35,7 +35,7 @@ def run_inference(model_path, source, output_dir, img_size=640, conf_threshold=0
         conf=conf_threshold,  # Confidence threshold
         project=output_dir,  # Directory for saving results
         name="inference",  # Subdirectory name for results
-        device=0           # Use GPU (set to 'cpu' if no GPU is available)
+        device="cpu"           # Use GPU (set to 'cpu' if no GPU is available)
     )
 
     print(f"Inference completed. Results saved in {os.path.join(output_dir, 'inference')}")
