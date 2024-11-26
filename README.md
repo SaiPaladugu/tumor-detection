@@ -252,7 +252,7 @@ While deep learning has been applied to medical imaging, the use of **YOLOv8** f
 
 ## Acknowledgments
 
-- **Carleotn University** - COMP 3106 Introduction to Artificial Intelligence course.
+- **Carleton University** - COMP 3106 Introduction to Artificial Intelligence course.
 - **Kaggle** - For providing the Brain MRI Images Dataset.
 - **Ultralytics** - For developing YOLOv8.
 
