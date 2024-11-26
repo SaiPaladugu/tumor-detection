@@ -1,5 +1,9 @@
 # Brain Tumor Detection using YOLOv8 on MRI Scans
 
+Annotated MRI scans with detected tumor region:
+
+![Annotated MRI Scan](data/annotated_images/valid/valid_00001_annotated.jpg)
+
 ## Introduction
 
 Brain tumors pose a significant threat to human health, and early detection is crucial for improving patient outcomes. Manual analysis of MRI scans is time-consuming and susceptible to human error. This project leverages **YOLOv8**, a state-of-the-art object detection model, to automatically and accurately detect brain tumors in MRI images. By optimizing YOLOv8 for this specific application, we aim to enhance the efficiency and accuracy of tumor detection, facilitating better prognosis and treatment planning.
@@ -223,7 +227,7 @@ After training and validation, the model achieved the following performance metr
 
 Annotated MRI scans with detected tumor regions can be found in `runs/inference/inference/`.
 
-![Annotated MRI Scan](runs/inference/inference/sample_image.jpg)
+![Annotated MRI Scan](data/annotated_images/valid/valid_00002_annotated.jpg)
 
 ## Validation and Evaluation
 
