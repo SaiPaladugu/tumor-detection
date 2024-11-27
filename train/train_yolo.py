@@ -3,7 +3,7 @@ import os
 
 # Define paths
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-DATA_DIR = os.path.join(BASE_DIR, 'data', 'brain_tumor')
+DATA_DIR = os.path.join(BASE_DIR, 'brain_tumor_yolo')
 YAML_PATH = os.path.join(DATA_DIR, 'data.yaml')  # Path to data.yaml
 
 # Function to train YOLOv8
