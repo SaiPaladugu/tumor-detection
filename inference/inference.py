@@ -7,7 +7,7 @@ import glob
 
 # Define paths
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-MODEL_PATH = os.path.join(BASE_DIR, 'runs', 'detect', 'train', 'weights', 'best.pt')  # Path to trained YOLO model
+MODEL_PATH = os.path.join(BASE_DIR, 'models', 'tumor_classifier', 'best.pt')  # Path to trained YOLO model
 OUTPUT_DIR = os.path.join(BASE_DIR, 'runs', 'inference')  # Output directory for results
 
 import cv2
