@@ -1,6 +1,0 @@
-names:
-- negative
-- positive
-nc: 2
-train: /Users/nathanelkhoury/Desktop/School/Fall2024/COMP3106/finalproj/data/brain_tumor/train/images
-val: /Users/nathanelkhoury/Desktop/School/Fall2024/COMP3106/finalproj/data/brain_tumor/valid/images
