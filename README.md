@@ -1,8 +1,8 @@
 # Brain Tumor Detection using YOLOv8 on MRI Scans
 
-Annotated MRI scans with detected tumor region:
+Annotated MRI scans with predicted tumor
 
-![Annotated MRI Scan](data/annotated_images/valid/valid_00001_annotated.jpg)
+![Annotated MRI Scan](classify/train22/val_batch0_pred.jpg)
 
 ## Introduction
 
