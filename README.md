@@ -2,7 +2,7 @@
 
 Annotated MRI scans with predicted tumor
 
-![Annotated MRI Scan](classify/train22/val_batch0_pred.jpg)
+![Annotated MRI Scan](runs/inference/inference/image%20(1).jpg)
 
 ## Introduction
 
@@ -227,7 +227,7 @@ After training and validation, the model achieved the following performance metr
 
 Annotated MRI scans with detected tumor regions can be found in `runs/inference/inference/`.
 
-![Annotated MRI Scan](data/annotated_images/valid/valid_00002_annotated.jpg)
+![Annotated MRI Scan](runs/inference/inference/image%20(2).jpg)
 
 ## Validation and Evaluation
 
