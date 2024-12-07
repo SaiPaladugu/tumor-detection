@@ -100,14 +100,12 @@ def on_inference():
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
 
 
-# Function to display the image
 def display_image(image_path):
     image = Image.open(image_path)
-    image.thumbnail((400, 400))  # Resize for display
+    image.thumbnail((600, 600))  # Resize for display (increase size)
     img_tk = ImageTk.PhotoImage(image)
     label_image.config(image=img_tk)
     label_image.image = img_tk
-
 
 # Initialize GUI
 root = tk.Tk()
@@ -115,24 +113,24 @@ root.title("YOLO Inference Tool")
 
 # File selection
 frame_file = tk.Frame(root)
-frame_file.pack(pady=10)
+frame_file.pack(pady=15)
 
-label_file = tk.Label(frame_file, text="Select Image:")
-label_file.pack(side=tk.LEFT, padx=5)
+label_file = tk.Label(frame_file, text="Select Image:", font=("Helvetica", 14))  # Larger font size
+label_file.pack(side=tk.LEFT, padx=10)
 
-entry_file_path = tk.Entry(frame_file, width=50)
-entry_file_path.pack(side=tk.LEFT, padx=5)
+entry_file_path = tk.Entry(frame_file, width=60, font=("Helvetica", 12))  # Wider entry field and larger font
+entry_file_path.pack(side=tk.LEFT, padx=10)
 
-btn_browse = tk.Button(frame_file, text="Browse", command=select_file)
-btn_browse.pack(side=tk.LEFT, padx=5)
+btn_browse = tk.Button(frame_file, text="Browse", command=select_file, font=("Helvetica", 12), width=10)  # Larger button
+btn_browse.pack(side=tk.LEFT, padx=10)
 
 # Inference button
-btn_infer = tk.Button(root, text="Run Inference", command=on_inference)
-btn_infer.pack(pady=10)
+btn_infer = tk.Button(root, text="Run Inference", command=on_inference, font=("Helvetica", 14), width=15)
+btn_infer.pack(pady=20)
 
 # Image display
 label_image = tk.Label(root)
-label_image.pack(pady=10)
+label_image.pack(pady=20)
 
 # Start GUI
 root.mainloop()
